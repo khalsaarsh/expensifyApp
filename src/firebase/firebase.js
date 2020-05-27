@@ -1,6 +1,5 @@
 import * as firebase from 'firebase';
 
-console.log(process.env.FIREBASE_DATABASE_URL)
 
 const firebaseConfig = {
     apiKey: process.env.FIREBASE_API_KEY,
@@ -12,6 +11,7 @@ const firebaseConfig = {
     appId: process.env.FIREBASE_APP_ID
   };
 
+  
 firebase.initializeApp(firebaseConfig);
 
 const database = firebase.database();
